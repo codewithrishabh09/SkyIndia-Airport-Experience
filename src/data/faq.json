@@ -1,0 +1,18 @@
+[
+  {
+    "question": "How do I book VIP assistance at Delhi T3?",
+    "answer": "Navigate to Airport Services, select VIP Assistance, choose your flight and terminal. Confirmation is instant with mock booking for this demo."
+  },
+  {
+    "question": "Is live flight tracking real-time?",
+    "answer": "This frontend demo simulates live updates with animated routes and periodic refresh. Production would connect to ADS-B or airline APIs."
+  },
+  {
+    "question": "Can I access lounges without membership?",
+    "answer": "Yes. Day passes are available for all premium lounges. See the Lounges page for pricing and virtual tours."
+  },
+  {
+    "question": "Does the AI assistant book real tickets?",
+    "answer": "No. The travel assistant provides mock responses for flight inquiry, suggestions, and airport guidance only."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "id": "1",
+    "name": "Priya Sharma",
+    "role": "Frequent Flyer",
+    "avatar": "PS",
+    "text": "SkyIndia transformed my airport experience. The lounge and VIP service feel truly world-class.",
+    "rating": 5
+  },
+  {
+    "id": "2",
+    "name": "Arjun Mehta",
+    "role": "Business Traveler",
+    "avatar": "AM",
+    "text": "Live tracking and terminal guide saved me twice during tight connections. Flawless UX.",
+    "rating": 5
+  },
+  {
+    "id": "3",
+    "name": "Sarah Chen",
+    "role": "International Guest",
+    "avatar": "SC",
+    "text": "The most beautiful airport platform I've used. Premium design meets real utility.",
+    "rating": 5
+  },
+  {
+    "id": "4",
+    "name": "John Doe",
+    "role": "Business Traveler",
+    "avatar": "JD",
+    "text": "The most beautiful airport platform I've used. Premium design meets real utility.",
+    "rating": 5
+  },
+  {
+    "id": "5",
+    "name": "Rishabh",
+    "role": "International Guest",
+    "avatar": "JD",
+    "text": "I love the SkyIndia airport experience. It's a great way to travel.",
+    "rating": 5
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "delhi",
+    "name": "Delhi",
+    "tagline": "Heart of India",
+    "image": "https://images.unsplash.com/photo-1587474260584-136574528ed5?w=800&q=80",
+    "weather": { "temp": 32, "condition": "Hazy Sun", "humidity": 45 },
+    "attractions": ["Red Fort", "India Gate", "Qutub Minar"],
+    "hotels": ["The Imperial", "Taj Palace", "Leela Palace"]
+  },
+  {
+    "id": "mumbai",
+    "name": "Mumbai",
+    "tagline": "City of Dreams",
+    "image": "https://images.unsplash.com/photo-1566552886540-bf058788aaeb?w=800&q=80",
+    "weather": { "temp": 30, "condition": "Humid", "humidity": 78 },
+    "attractions": ["Gateway of India", "Marine Drive", "Elephanta Caves"],
+    "hotels": ["Taj Mahal Palace", "Oberoi", "Trident"]
+  },
+  {
+    "id": "bengaluru",
+    "name": "Bengaluru",
+    "tagline": "Silicon Valley of India",
+    "image": "https://images.unsplash.com/photo-1596176530439-854f400947c1?w=800&q=80",
+    "weather": { "temp": 26, "condition": "Pleasant", "humidity": 62 },
+    "attractions": ["Lalbagh", "Cubbon Park", "Bangalore Palace"],
+    "hotels": ["ITC Gardenia", "Taj West End", "Vivanta"]
+  },
+  {
+    "id": "hyderabad",
+    "name": "Hyderabad",
+    "tagline": "Pearl City",
+    "image": "https://images.unsplash.com/photo-1593691509543-c55fb32e5cee?w=800&q=80",
+    "weather": { "temp": 34, "condition": "Clear", "humidity": 40 },
+    "attractions": ["Charminar", "Golconda Fort", "Hussain Sagar"],
+    "hotels": ["Taj Falaknuma", "Park Hyatt", "Novotel"]
+  },
+  {
+    "id": "chennai",
+    "name": "Chennai",
+    "tagline": "Gateway to South",
+    "image": "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=800&q=80",
+    "weather": { "temp": 33, "condition": "Coastal Breeze", "humidity": 70 },
+    "attractions": ["Marina Beach", "Kapaleeshwarar Temple", "Fort St. George"],
+    "hotels": ["ITC Grand Chola", "Leela Palace", "Park Hyatt"]
+  },
+  {
+    "id": "goa",
+    "name": "Goa",
+    "tagline": "Paradise Coast",
+    "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?w=800&q=80",
+    "weather": { "temp": 29, "condition": "Sunny", "humidity": 75 },
+    "attractions": ["Baga Beach", "Old Goa Churches", "Dudhsagar Falls"],
+    "hotels": ["Taj Exotica", "W Goa", "Alila Diwa"]
+  },
+  {
+    "id": "jaipur",
+    "name": "Jaipur",
+    "tagline": "Pink City",
+    "image": "https://images.unsplash.com/photo-1477587453493-ef42f597f2c1?w=800&q=80",
+    "weather": { "temp": 36, "condition": "Dry Heat", "humidity": 25 },
+    "attractions": ["Amber Fort", "Hawa Mahal", "City Palace"],
+    "hotels": ["Rambagh Palace", "Oberoi Rajvilas", "Samode Haveli"]
+  },
+  {
+    "id": "kolkata",
+    "name": "Kolkata",
+    "tagline": "City of Joy",
+    "image": "https://images.unsplash.com/photo-1558431382-27e303142255?w=800&q=80",
+    "weather": { "temp": 31, "condition": "Monsoon Clouds", "humidity": 82 },
+    "attractions": ["Victoria Memorial", "Howrah Bridge", "Park Street"],
+    "hotels": ["Oberoi Grand", "Taj Bengal", "ITC Sonar"]
+  }
+]

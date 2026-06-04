@@ -1,0 +1,191 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+  --font-accent: "Syne", sans-serif;
+
+  --color-sky-950: #020617;
+  --color-sky-900: #0f172a;
+  --color-sky-800: #1e293b;
+  --color-sky-700: #334155;
+  --color-sky-600: #475569;
+  --color-sky-500: #64748b;
+  --color-sky-400: #94a3b8;
+  --color-sky-300: #cbd5e1;
+  --color-sky-200: #e2e8f0;
+  --color-sky-100: #f1f5f9;
+
+  --color-accent: #38bdf8;
+  --color-accent-glow: #0ea5e9;
+  --color-gold: #fbbf24;
+  --color-gold-muted: #d97706;
+  --color-emerald: #34d399;
+  --color-rose: #fb7185;
+
+  --radius-glass: 1.25rem;
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.37);
+  --shadow-neu-dark: 8px 8px 16px #0a0f1a, -8px -8px 16px #1a2332;
+  --shadow-neu-light: 8px 8px 16px #d1d5db, -8px -8px 16px #ffffff;
+}
+
+@layer base {
+  * {
+    @apply border-sky-800/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html.lenis,
+  html.lenis body {
+    height: auto;
+  }
+
+  .lenis.lenis-smooth {
+    scroll-behavior: auto;
+  }
+
+  body {
+    @apply bg-sky-950 text-sky-100 font-sans antialiased overflow-x-hidden;
+    font-family: var(--font-sans);
+  }
+
+  html.light body {
+    @apply bg-sky-100 text-sky-900;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-white;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-accent {
+    font-family: var(--font-accent);
+  }
+
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 shadow-[var(--shadow-glass)];
+  }
+
+  .glass-strong {
+    @apply bg-white/10 backdrop-blur-2xl border border-white/15;
+  }
+
+  .neu-dark {
+    box-shadow: var(--shadow-neu-dark);
+  }
+
+  .neu-light {
+    box-shadow: var(--shadow-neu-light);
+  }
+
+  .gradient-hero {
+    background: radial-gradient(ellipse 80% 50% at 50% -20%,
+        rgba(14, 165, 233, 0.35),
+        transparent),
+      radial-gradient(ellipse 60% 40% at 100% 0%,
+        rgba(251, 191, 36, 0.12),
+        transparent),
+      linear-gradient(180deg, #020617 0%, #0f172a 50%, #020617 100%);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-sky-200 via-accent to-gold;
+  }
+
+  .text-balance {
+    @supports (text-wrap: balance) {
+      text-wrap: balance;
+    }
+  }
+
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+
+    @supports (scrollbar-width: none) {
+      scrollbar-width: none;
+    }
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide Mapbox geolocate UI if a map embed is added later */
+  .mapboxgl-ctrl-geolocate,
+  .mapboxgl-user-location-dot,
+  .mapboxgl-user-location-accuracy-circle {
+    display: none !important;
+  }
+
+  /* Chart Utilities */
+  .recharts-default-tooltip,
+  .chart-tooltip-content {
+    background-color: #1e293b !important;
+    border: 1px solid #334155 !important;
+    border-radius: 12px !important;
+    padding: 8px 12px !important;
+    box-shadow: var(--shadow-glass) !important;
+  }
+
+  .heatmap-cell {
+    background-color: #38bdf8;
+  }
+
+  .heat-level-0 {
+    opacity: 0;
+  }
+
+  .heat-level-1 {
+    opacity: 0.1;
+  }
+
+  .heat-level-2 {
+    opacity: 0.2;
+  }
+
+  .heat-level-3 {
+    opacity: 0.3;
+  }
+
+  .heat-level-4 {
+    opacity: 0.4;
+  }
+
+  .heat-level-5 {
+    opacity: 0.5;
+  }
+
+  .heat-level-6 {
+    opacity: 0.6;
+  }
+
+  .heat-level-7 {
+    opacity: 0.7;
+  }
+
+  .heat-level-8 {
+    opacity: 0.8;
+  }
+
+  .heat-level-9 {
+    opacity: 0.9;
+  }
+
+  .heat-level-10 {
+    opacity: 1;
+  }
+}

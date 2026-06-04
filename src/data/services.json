@@ -1,0 +1,50 @@
+[
+  {
+    "id": "vip",
+    "title": "VIP Assistance",
+    "description": "Dedicated concierge from curb to gate with priority clearance.",
+    "price": 15000,
+    "icon": "Crown",
+    "features": ["Fast-track security", "Personal escort", "Lounge access"]
+  },
+  {
+    "id": "meet-greet",
+    "title": "Meet and Greet",
+    "description": "Warm welcome at arrivals with name board and baggage help.",
+    "price": 4500,
+    "icon": "Users",
+    "features": ["Arrival assistance", "Baggage porter", "Ground transport link"]
+  },
+  {
+    "id": "baggage",
+    "title": "Baggage Services",
+    "description": "Door-to-airport baggage pickup and secure handling.",
+    "price": 2500,
+    "icon": "Luggage",
+    "features": ["Home pickup", "Tracking", "Insurance cover"]
+  },
+  {
+    "id": "transfer",
+    "title": "Airport Transfers",
+    "description": "Luxury chauffeur-driven transfers in premium fleet.",
+    "price": 3500,
+    "icon": "Car",
+    "features": ["Mercedes fleet", "Flight monitoring", "Meet at terminal"]
+  },
+  {
+    "id": "wheelchair",
+    "title": "Wheelchair Assistance",
+    "description": "Trained staff for mobility support throughout the journey.",
+    "price": 0,
+    "icon": "Accessibility",
+    "features": ["Pre-booked", "Gate-to-aircraft", "24/7 availability"]
+  },
+  {
+    "id": "medical",
+    "title": "Medical Support",
+    "description": "On-site medical team and pharmacy coordination.",
+    "price": 0,
+    "icon": "HeartPulse",
+    "features": ["First aid", "Doctor on call", "Emergency response"]
+  }
+]

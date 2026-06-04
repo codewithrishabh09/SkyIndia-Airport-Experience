@@ -1,0 +1,29 @@
+[
+  {
+    "id": "sky-first-del",
+    "name": "SkyIndia First Lounge",
+    "terminal": "T3, Delhi",
+    "rating": 4.9,
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80",
+    "amenities": ["Spa", "Private suites", "Fine dining", "Shower rooms"],
+    "membership": { "day": 8500, "annual": 125000 }
+  },
+  {
+    "id": "horizon-bom",
+    "name": "Horizon Business Club",
+    "terminal": "T2, Mumbai",
+    "rating": 4.7,
+    "image": "https://images.unsplash.com/photo-1571896349849-33c89424de2d?w=800&q=80",
+    "amenities": ["Bar", "Work pods", "Showers", "Buffet"],
+    "membership": { "day": 4500, "annual": 65000 }
+  },
+  {
+    "id": "zenith-blr",
+    "name": "Zenith Premium Lounge",
+    "terminal": "T1, Bengaluru",
+    "rating": 4.8,
+    "image": "https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=800&q=80",
+    "amenities": ["Sleep pods", "Massage", "Chef menu", "WiFi 6E"],
+    "membership": { "day": 5500, "annual": 78000 }
+  }
+]
