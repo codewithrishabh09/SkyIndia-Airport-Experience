@@ -58,5 +58,17 @@
     "price": 89999,
     "class": "First",
     "status": "On Time"
+  },
+  {
+    "id": "SI629",
+    "airline": "SkyIndia",
+    "logo": "SI",
+    "from": { "code": "DEL", "city": "Delhi", "time": "18:00" },
+    "to": { "code": "BLR", "city": "Bengaluru", "time": "20:30" },
+    "duration": 150,
+    "layovers": 0,
+    "price": 9499,
+    "class": "Economy",
+    "status": "On Time"
   }
 ]

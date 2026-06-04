@@ -50,17 +50,19 @@ export function SearchForm({ compact = false, onSearch }: SearchFormProps) {
         <TabsContent value={trip} className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
             <div className="relative">
-              <label className="text-xs text-sky-500 mb-1 block">From</label>
+              <label htmlFor="from-input" className="text-xs text-sky-500 mb-1 block">From</label>
               <Input
+                id="from-input"
                 value={from}
                 onChange={(e) => setFrom(e.target.value.toUpperCase())}
                 placeholder="Airport code"
               />
             </div>
             <div className="relative">
-              <label className="text-xs text-sky-500 mb-1 block">To</label>
+              <label htmlFor="to-input" className="text-xs text-sky-500 mb-1 block">To</label>
               <div className="flex gap-2">
                 <Input
+                  id="to-input"
                   value={to}
                   onChange={(e) => setTo(e.target.value.toUpperCase())}
                   placeholder="Airport code"
@@ -78,18 +80,18 @@ export function SearchForm({ compact = false, onSearch }: SearchFormProps) {
               </div>
             </div>
             <div>
-              <label className="text-xs text-sky-500 mb-1 block">Depart</label>
+              <label htmlFor="depart-date" className="text-xs text-sky-500 mb-1 block">Depart</label>
               <div className="relative">
                 <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-sky-500" />
-                <Input type="date" className="pl-10" defaultValue="2026-06-15" />
+                <Input id="depart-date" type="date" className="pl-10" defaultValue="2026-06-15" />
               </div>
             </div>
             {trip === 'round' && (
               <div>
-                <label className="text-xs text-sky-500 mb-1 block">Return</label>
+                <label htmlFor="return-date" className="text-xs text-sky-500 mb-1 block">Return</label>
                 <div className="relative">
                   <Calendar className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-sky-500" />
-                  <Input type="date" className="pl-10" defaultValue="2026-06-22" />
+                  <Input id="return-date" type="date" className="pl-10" defaultValue="2026-06-22" />
                 </div>
               </div>
             )}
@@ -118,8 +120,10 @@ export function SearchForm({ compact = false, onSearch }: SearchFormProps) {
               </div>
             </div>
             <div>
-              <label className="text-xs text-sky-500 mb-1 block">Class</label>
+              <label htmlFor="class-select" className="text-xs text-sky-500 mb-1 block">Class</label>
               <select
+                id="class-select"
+                title="Select Travel Class"
                 value={travelClass}
                 onChange={(e) => setTravelClass(e.target.value)}
                 className="h-11 rounded-xl border border-white/10 bg-white/5 px-4 text-sm text-sky-100"

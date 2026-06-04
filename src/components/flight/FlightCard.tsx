@@ -88,7 +88,7 @@ export function FlightCard({ flight, index = 0 }: FlightCardProps) {
                 </p>
                 <Button
                   onClick={() =>
-                    toast('Booking flow is demo-only. Flight reserved!', 'success')
+                    toast("Your seat is saved — ready for takeoff!", 'success')
                   }
                   className="w-full sm:w-auto group/btn"
                 >
