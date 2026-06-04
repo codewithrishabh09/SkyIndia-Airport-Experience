@@ -188,4 +188,9 @@
   .heat-level-10 {
     opacity: 1;
   }
+
+  .marker-pos {
+    left: var(--x, 0);
+    top: var(--y, 0);
+  }
 }

@@ -1,6 +1,6 @@
 [
   { "code": "DEL", "name": "Indira Gandhi International", "city": "Delhi", "country": "India" },
-  { "code": "BOM", "name": "Chhatrapati Shivaji Maharaj International", "city": "Mumbai", "country": "India" },
+  { "code": "MUM", "name": "Chhatrapati Shivaji Maharaj International", "city": "Mumbai", "country": "India" },
   { "code": "BLR", "name": "Kempegowda International", "city": "Bengaluru", "country": "India" },
   { "code": "HYD", "name": "Rajiv Gandhi International", "city": "Hyderabad", "country": "India" },
   { "code": "MAA", "name": "Chennai International", "city": "Chennai", "country": "India" },

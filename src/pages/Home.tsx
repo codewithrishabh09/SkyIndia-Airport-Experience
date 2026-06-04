@@ -8,13 +8,17 @@ import {
   Award,
   ArrowRight,
   Sparkles,
+  Utensils,
+  ShoppingBag,
+  Armchair,
+  Bath,
+  Wallet,
 } from 'lucide-react'
 import { HeroVideo, Hero3DAccent } from '@/components/animations/HeroScene'
 import { SearchForm } from '@/components/flight/SearchForm'
 import { SectionHeading } from '@/components/common/SectionHeading'
 import { AnimatedNumber } from '@/components/common/AnimatedNumber'
 import { FlightCard } from '@/components/flight/FlightCard'
-import { AirportCard } from '@/components/airport/AirportCard'
 import { Carousel } from '@/components/common/Carousel'
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion'
 import { Button } from '@/components/ui/button'
@@ -24,7 +28,6 @@ import destinationsData from '@/data/destinations.json'
 import testimonialsData from '@/data/testimonials.json'
 import newsData from '@/data/news.json'
 import faqData from '@/data/faq.json'
-import servicesData from '@/data/services.json'
 import loungesData from '@/data/lounges.json'
 import mumbaiImage from '@/Gallery/mumbai.jpg'
 import bangloreImage from '@/Gallery/banglore.jpg'
@@ -33,7 +36,6 @@ import jaipurImage from '@/Gallery/jaipur.jpg'
 import roomImage from '@/Gallery/room.jpg'
 import biomaticImage from '@/Gallery/biomatic.jpg'
 import recordPassengerNewsImage from '@/Gallery/record passenger news.png'
-import { Crown, Luggage, Car } from 'lucide-react'
 
 const newsImages: Record<string, string> = {
   '2': biomaticImage,
@@ -146,7 +148,7 @@ export default function Home() {
                         ? hydrabadImage
                         : dest.id === 'jaipur'
                           ? jaipurImage
-                      : dest.image
+                          : dest.image
                 }
                 alt={dest.name}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
@@ -206,32 +208,51 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Airport Services */}
-      <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto">
-        <SectionHeading
-          eyebrow="Concierge"
-          title="Airport Services"
-          subtitle="VIP assistance, transfers, and premium care at every touchpoint."
-        />
-        <div className="grid md:grid-cols-3 gap-6" data-stagger>
-          {servicesData.slice(0, 3).map((s, i) => (
-            <AirportCard
-              key={s.id}
-              title={s.title}
-              description={s.description}
-              price={s.price}
-              index={i}
-              icon={
-                i === 0 ? (
-                  <Crown className="h-6 w-6" />
-                ) : i === 1 ? (
-                  <Luggage className="h-6 w-6" />
-                ) : (
-                  <Car className="h-6 w-6" />
-                )
-              }
-            />
-          ))}
+      {/* Airport Services Preview */}
+      <section className="py-24 px-4 md:px-8 bg-sky-950/40 relative overflow-hidden">
+        <div className="absolute inset-0 bg-grid-white/[0.02] -z-10" />
+        <div className="max-w-7xl mx-auto">
+          <SectionHeading
+            eyebrow="Airport Facilities"
+            title="Explore Airport Services"
+            subtitle="Discover dining, shopping, lounges, restrooms, and banking services across the terminal."
+          />
+
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4" data-stagger>
+            {[
+              { icon: Utensils, title: 'Food Court', stats: '25+ Rest.' },
+              { icon: ShoppingBag, title: 'Shopping', stats: '120+ Stores' },
+              { icon: Armchair, title: 'Lounges', stats: '20+ VIP' },
+              { icon: Bath, title: 'Restrooms', stats: '75+ Units' },
+              { icon: Wallet, title: 'ATM Locator', stats: '40+ Banks' },
+            ].map((s, i) => (
+              <motion.div
+                key={s.title}
+                data-stagger-item
+                className="glass p-6 rounded-2xl text-center group cursor-pointer hover:bg-accent/10 transition-colors"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+              >
+                <div className="w-10 h-10 rounded-full bg-accent/20 flex items-center justify-center text-accent mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <s.icon className="h-5 w-5" />
+                </div>
+                <h3 className="text-sm font-semibold mb-1">{s.title}</h3>
+                <p className="text-[10px] text-sky-500 uppercase tracking-widest">{s.stats}</p>
+                <Link to="/airport-services" className="absolute inset-0" />
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <Link to="/airport-services">
+              <Button size="lg" variant="gold" className="group">
+                Enter Services Hub
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 

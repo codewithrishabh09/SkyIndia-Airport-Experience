@@ -4,7 +4,7 @@
     "airline": "SkyIndia",
     "logo": "SI",
     "from": { "code": "DEL", "city": "Delhi", "time": "06:30" },
-    "to": { "code": "BOM", "city": "Mumbai", "time": "08:45" },
+    "to": { "code": "MUM", "city": "Mumbai", "time": "08:45" },
     "duration": 135,
     "layovers": 0,
     "price": 8499,
@@ -51,7 +51,7 @@
     "id": "SI522",
     "airline": "SkyIndia First",
     "logo": "SF",
-    "from": { "code": "BOM", "city": "Mumbai", "time": "22:30" },
+    "from": { "code": "MUM", "city": "Mumbai", "time": "22:30" },
     "to": { "code": "LHR", "city": "London", "time": "04:15" },
     "duration": 585,
     "layovers": 0,
@@ -68,7 +68,7 @@
     "duration": 150,
     "layovers": 0,
     "price": 9499,
-    "class": "Economy",
+    "class": "Premium Economy",
     "status": "On Time"
   }
 ]
