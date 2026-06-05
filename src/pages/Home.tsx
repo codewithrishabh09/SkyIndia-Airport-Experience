@@ -7,17 +7,14 @@ import {
   Users,
   Award,
   ArrowRight,
-  Sparkles,
   Utensils,
   ShoppingBag,
   Armchair,
   Bath,
   Wallet,
 } from 'lucide-react'
-import { HeroVideo, Hero3DAccent } from '@/components/animations/HeroScene'
-import { SearchForm } from '@/components/flight/SearchForm'
+import HeroSection from '@/components/ui/HeroSection'
 import { SectionHeading } from '@/components/common/SectionHeading'
-import { AnimatedNumber } from '@/components/common/AnimatedNumber'
 import { FlightCard } from '@/components/flight/FlightCard'
 import { Carousel } from '@/components/common/Carousel'
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '@/components/ui/accordion'
@@ -42,12 +39,6 @@ const newsImages: Record<string, string> = {
   '3': recordPassengerNewsImage,
 }
 
-const STATS = [
-  { label: 'Daily Flights', value: 1200, suffix: '+' },
-  { label: 'Happy Passengers', value: 2, suffix: 'M+' },
-  { label: 'Premium Lounges', value: 48, suffix: '' },
-  { label: 'On-Time Rate', value: 94, suffix: '%' },
-]
 
 function getLoungeImage(lounge: (typeof loungesData)[number], index: number) {
   if (
@@ -74,54 +65,7 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-screen flex items-center">
-        <HeroVideo />
-        <Hero3DAccent />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 w-full pt-8">
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="max-w-3xl mb-10"
-          >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-xs font-accent tracking-widest uppercase text-accent mb-6">
-              <Sparkles className="h-3 w-3" />
-              Ultra Premium Aviation
-            </span>
-            <h1 className="font-display text-4xl md:text-6xl lg:text-7xl font-semibold leading-tight text-balance">
-              The Future of{' '}
-              <span className="gradient-text">Indian Aviation</span>
-            </h1>
-            <p className="mt-6 text-lg text-sky-400 max-w-xl">
-              Experience world-class airports, live flight intelligence, premium
-              lounges, and seamless journeys across India.
-            </p>
-          </motion.div>
-
-          <SearchForm />
-
-          <div
-            className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12"
-            data-stagger
-          >
-            {STATS.map((stat, i) => (
-              <motion.div
-                key={stat.label}
-                data-stagger-item
-                className="glass rounded-xl p-4 text-center"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 + i * 0.1 }}
-              >
-                <p className="text-2xl md:text-3xl font-display font-semibold text-accent">
-                  <AnimatedNumber value={stat.value} suffix={stat.suffix} />
-                </p>
-                <p className="text-xs text-sky-500 mt-1">{stat.label}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <HeroSection />
 
       {/* Popular Destinations */}
       <section className="py-24 px-4 md:px-8 max-w-7xl mx-auto">
